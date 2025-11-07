@@ -66,14 +66,14 @@ void peek(){
 }
 
 int main(){
-    printf("Pushing in, 5 elements: ");
+    printf("Pushing in, 5 elements: \n");
     push(808);
     push(808);
     push(808);
     push(808);
     push(808);
     display();
-    printf("Popping out, 3 elements: ");
+    printf("Popping out, 3 elements: \n");
     pop();
     pop();
     pop();
