@@ -33,6 +33,11 @@ void pop(){
     top--;
 }
 
+void peek(){
+    printf("The peek element of the stack is: \n");
+    printf("%d ", stack[top]);
+}
+
 void display(){
     if(isEmpty()){
         printf("UnderFLow");
