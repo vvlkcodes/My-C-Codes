@@ -101,13 +101,5 @@ Stay tuned for regular updates! 🚀
 📚 *Practicing C programming since Semester 1 — building logic one loop at a time.*
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-C-blue?style=flat-square" alt="C Language Badge"/>
-  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Focus-Logic%20%26%20Patterns-green?style=flat-square"/>
-</p>
-
----
-
-<p align="center">
   ⭐ If you find these programs helpful, consider starring the repository! ⭐
 </p>
