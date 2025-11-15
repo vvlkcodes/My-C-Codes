@@ -1,19 +1,39 @@
-//write a program for reverse order of an array using pointer.
+// Insertion sort
 #include <stdio.h>
-void reverse(int n, int *arr){
-    printf("the reverse order of elements is: ");
-    for(int i=n-1;i>=0;i--)
-    printf("%d ", *(arr+i));
+
+void insertionSort(int arr[], int n) {
+    for(int i = 1; i < n; i++) {
+        int key = arr[i];      // element to be placed at correct position
+        int j = i - 1;
+
+        // shift larger elements to the right
+        while(j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+
+        arr[j + 1] = key;      // place key in the correct position
+    }
 }
-int main(){
-    int n;
-    printf("enter the numner of elements:");
-    scanf("%d", &n);
-    int arr[n];
-    printf("enter the elements of the array:");
-    for(int i =0;i<n;i++) 
-    scanf("%d", &arr[i]);
-    reverse(n, arr);
+
+void printArray(int arr[], int n) {
+    for(int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    int arr[] = {5, 2, 4, 6, 1, 3};
+    int n = sizeof(arr)/sizeof(arr[0]);
     
+    printf("Unsorted Array: ");
+    printArray(arr, n);
+
+    insertionSort(arr, n);
+
+    printf("Sorted Array:   ");
+    printArray(arr, n);
+
     return 0;
 }
