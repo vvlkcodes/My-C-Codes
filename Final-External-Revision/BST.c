@@ -143,5 +143,6 @@ int main(){
     printf("\n");
     postorder(root);
     printf("\n");
+    search(root, 5);
     return 0;
 }
